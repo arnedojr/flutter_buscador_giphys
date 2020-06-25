@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
           crossAxisSpacing: 10.0,
           mainAxisSpacing: 10.0
         ),
-        itemCount: 4, //fixo... depois colocar variavel a quantidade de giphs
+        itemCount: snapshot.data["data"].length,
         itemBuilder:(context, index) {
           return GestureDetector(
             child: Image.network(snapshot.data["data"][index]["images"]["fixed_height"]["url"],
